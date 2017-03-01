@@ -3,6 +3,7 @@
      <head>
          <meta charset="utf-8">
          <title>Herramientas</title>
+         <link rel="stylesheet" href="./assets/css/style.css">
      </head>
      <body>
          <section class="container">
@@ -17,24 +18,23 @@
                                 <a href="" class="nav-ul-li-a">Seguimiento</a>
                             </li>
                         </ul>
-
                      </nav>
                  </div>
                  <div class="container-section-form">
                     <div class="form-title">
-                        <a href="#">Inicio</a> <span>/</span> <span>Seguimiento</span>
+                        <a href="#" class="form-title-start font-title">Inicio</a> <span class="font-title">/</span> <span class="font-title">Seguimiento</span>
                     </div>
                     <div class="container-form-data">
                         <div class="form-data-title">
-                            <span>Adicionar</span>
+                            <span class="title-add">Adicionar</span>
                         </div>
                         <form class="form-data-tool">
                              <div class="form-data-tool-add">
-                                 <div class="add-cod-report">
+                                 <div class="add cod-report">
                                      <label for="cod-report" class="label">CODIGO REPORTE</label>
                                      <input clasa="input" type="text" name="" placeholder="01012017AIPE012N1"  id="cod-report" required>
                                  </div>
-                                 <div class="add-property">
+                                 <div class="add property">
                                      <label for="property" class="label">PREDIO</label>
                                      <select class="input" name="" id="property" required>
                                          <option value="0">AIPO12-LA CHONTA LOTE 4</option>
@@ -43,7 +43,7 @@
                                          <option value="3">AIPO12-LA CHONTA LOTE 1</option>
                                      </select>
                                  </div>
-                                 <div class="add-interviewer">
+                                 <div class="add interviewer">
                                     <label for="interviewer" class="label">ENCUESTADOR</label>
                                     <select class="input" name="" id="interviewer" required>
                                         <option value="0">Gheynner Lobaton</option>
@@ -52,20 +52,169 @@
                                         <option value="3">Gheynner Lobaton</option>
                                     </select>
                                  </div>
-                                 <div class="add-date">
-
+                                 <div class="add date">
+                                    <label for="date" class="label">Fecha</label>
+                                    <input type="number" name="" placeholder="01" class="input-numberF">
+                                    <input type="number" name="" placeholder="01" class="input-numberF">
+                                    <input type="number" name="" placeholder="01" class="input-numberF">
                                  </div>
-                                 <div class="add-respondents">
-
+                                 <div class="add respondents">
+                                    <label for="respondents">ENCUESTADO</label>
+                                    <input type="text" name="" placeholder="BERNARDO BERTEL" id="respondents" required>
                                  </div>
-                                 <div class="add-type-report">
-
+                                 <div class="add type-report">
+                                    <label for="report">TIPO REPORTE</label>
+                                    <select class="input" name="" id="report" required>
+                                        <option value="0">IMPLEMENTACION</option>
+                                        <option value="1">IMPLEMENTACION</option>
+                                        <option value="2">IMPLEMENTACION</option>
+                                        <option value="3">IMPLEMENTACION</option>
+                                    </select>
                                  </div>
                              </div>
                              <div class="form-data-tool-implementation">
-
+                                <div class="container-implementation-title">
+                                    <span class="implementation-title">Implementación de Herramientas</span>
+                                </div>
+                                <div class="">
+                                    <label for="" class="label">CODIGO HMP</label>
+                                    <select class="input" name="" id="" required>
+                                        <option value="0">AIPE012-EFB1</option>
+                                        <option value="1">AIPE012-EFB2</option>
+                                        <option value="2">AIPE012-EFB3</option>
+                                        <option value="3">AIPE012-EFB4</option>
+                                        <option value="4">AIPE012-EFB5</option>
+                                    </select>
+                                </div>
+                                <div class="">
+                                    <label for="" class="label">COBERTURA</label>
+                                    <select class="input" name="">
+                                        <option value="bosque">Bosque abierto</option>
+                                        <option value="bosque1">Bosque ceerrado</option>
+                                        <option value="bosque2">Bosque medio</option>
+                                    </select>
+                                </div>
+                                <div class="">
+                                    <label for="tam-estable" class="label">TAMAÑO PREPARADO</label>
+                                    <input type="text" name="" value="" placeholder="15.3" id="tam-estable">
+                                    <select class="input" name="">
+                                        <option value="">Ha</option>
+                                        <option value="">He</option>
+                                        <option value="">Hi</option>
+                                        <option value="">Ho</option>
+                                        <option value="">Hu</option>
+                                    </select>
+                                </div>
+                                <div class="">
+                                    <label for="" class="label">INICIO ESTABLECIMIENTO</label>
+                                    <input type="number" name="" placeholder="01" class="input-numberF">
+                                    <input type="number" name="" placeholder="01" class="input-numberF">
+                                    <input type="number" name="" placeholder="01" class="input-numberF">
+                                </div>
+                                <div class="">
+                                    <label for="end-establishment">FIN ESTABLECIMIENTO</label>
+                                    <input type="number" name="" placeholder="01" class="input-numberF" id="end-establishment">
+                                    <input type="number" name="" placeholder="01" class="input-numberF">
+                                    <input type="number" name="" placeholder="01" class="input-numberF">
+                                </div>
+                                <div class="">
+                                    <label for="" class="">TAMAÑO ESTABLECIDO</label>
+                                    <input type="text" name="" value="" placeholder="15.3" id="tam-estable">
+                                    <select class="input" name="">
+                                        <option value="">Ha</option>
+                                        <option value="">He</option>
+                                        <option value="">Hi</option>
+                                        <option value="">Ho</option>
+                                        <option value="">Hu</option>
+                                    </select>
+                                </div>
+                                <div class="">
+                                    <label for="number-planta" class=""># PLANTAS ESTABLECIDAS</label>
+                                    <input type="text" name="" value="" class="input" id="number-planta">
+                                </div>
+                             <div class="">
+                                    <div class="table-1">
+                                       <table>
+                                           <tr>
+                                               <th colspan="3">Especies</th>
+                                           </tr>
+                                           <tr>
+                                               <th>Especie</th>
+                                               <th>Cantidad</th>
+                                               <th>Acciones</th>
+                                           </tr>
+                                           <tr>
+                                               <td>Acacio</td>
+                                               <td>20</td>
+                                               <td>
+                                                   <input type="button" name="" value="Editar">
+                                                   <input type="button" name="" value="Borrar">
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td>Algarrobo</td>
+                                               <td>15</td>
+                                               <td>
+                                                   <input type="button" name="" value="Editar">
+                                                   <input type="button" name="" value="Borrar">
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td>Bijao</td>
+                                               <td>43</td>
+                                               <td>
+                                                   <input type="button" name="" value="Editar">
+                                                   <input type="button" name="" value="Borrar">
+                                               </td>
+                                           </tr>
+                                       </table>
+                                   </div>
+                                   <div class="table-2">
+                                      <table>
+                                          <tr>
+                                              <th colspan="3">Material</th>
+                                          </tr>
+                                          <tr>
+                                              <th>Material</th>
+                                              <th>Cantidad</th>
+                                              <th>Acciones</th>
+                                          </tr>
+                                          <tr>
+                                              <td>Rollos de alambre</td>
+                                              <td>5</td>
+                                              <td>
+                                                  <input type="button" name="" value="Editar">
+                                                  <input type="button" name="" value="Borrar">
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>Palas</td>
+                                              <td>3</td>
+                                              <td>
+                                                  <input type="button" name="" value="Editar">
+                                                  <input type="button" name="" value="Borrar">
+                                              </td>
+                                          </tr>
+                                      </table>
+                                  </div>
+                                  <div>
+                                      <label for="file">Foto</label>
+                                      <input type="text" name="" value="" placeholder="--" id="file">
+                                      <label for="file">URL Flickr</label>
+                                  </div>
+                                  <div>
+                                       <label for="textarea">Observaciones</label>
+                                       <textarea name="name" rows="5" cols="40" placeholder="--" id="textarea"></textarea>
+                                  </div>
+                              </div>
                              </div>
                              <div class="form-data-tool-save">
+                                 <div class="">
+                                     <input type="button" name="" value="Guardar">
+                                 </div>
+                                 <div class="">
+                                     <input type="button" name="" value="Regresar a la lista">
+                                 </div>
 
                              </div>
                         </form>
