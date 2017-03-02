@@ -275,7 +275,7 @@ table, th,td {
 
 .nav-ul-li-a {
     height: 40px;
-    padding: 5px 30px;
+    padding: 5px 20px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -283,4 +283,12 @@ table, th,td {
     text-decoration: none;
     color: white;
     background-color: #1565C0;
+}
+
+i {
+    margin-left: 10px;
+}
+.tamCal {
+    font-size: 25px !important;
+    margin-left: 3px;
 }
